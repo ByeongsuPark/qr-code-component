@@ -25,11 +25,11 @@ body {
   border-radius: 10px;
 }
 
-.qrcode-component .section {
+.qrcode-component section {
   margin: 24px 16px 0 16px;
 }
 
-.qrcode-component .section h2 {
+.qrcode-component h2 {
   color: #1f314f;
   font-family: "Outfit", sans-serif;
   font-size: var(--22px);
@@ -38,7 +38,7 @@ body {
   line-height: 1.2;
 }
 
-.qrcode-component .section p {
+.qrcode-component p {
   color: #68778d;
   margin-top: 16px;
   font-size: var(--15px);
