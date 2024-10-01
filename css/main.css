@@ -1,52 +1,50 @@
+html {
+  --15px: 0.9375rem;
+  --22px: 1.3125rem;
+}
+
 body {
   background-color: #d5e1ef;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.container {
-}
-
-.container .qrcode-component {
+.qrcode-component {
   box-shadow: 0 25px 25px 0px rgba(0, 0, 0, 0.0477);
-  width: 288px;
+  max-width: calc(320rem / 16);
   background-color: white;
   padding: 16px 16px 40px;
   border-radius: 20px;
-  margin: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.container .qrcode-component .qrcode {
-}
-
-.container .qrcode-component .qrcode img {
-  width: 288px;
-  height: 288px;
+.qrcode-component img {
   border-radius: 10px;
 }
 
-.container .qrcode-component .section {
+.qrcode-component .section {
   margin: 24px 16px 0 16px;
 }
 
-.container .qrcode-component .section .title {
+.qrcode-component .section h2 {
   color: #1f314f;
-  text-align: center;
   font-family: "Outfit", sans-serif;
-  font-size: 22px;
+  font-size: var(--22px);
   font-weight: 700;
-  font-style: bold;
+  font-style: normal;
   line-height: 1.2;
 }
 
-.container .qrcode-component .section .content {
+.qrcode-component .section span {
   color: #68778d;
   margin-top: 16px;
-  text-align: center;
-  font-size: 15px;
+  font-size: var(--15px);
   font-family: "Outfit", sans-serif;
   line-height: 1.4;
-  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
+  display: block;
 }
